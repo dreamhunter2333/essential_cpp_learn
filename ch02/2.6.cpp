@@ -9,7 +9,7 @@ T max_func(T num1, T num2)
 }
 
 template <typename T>
-T max_func(vector<T> vect)
+T max_func(vector<T> &vect)
 {
     T max = vect[0];
     for (int i = 1; i < vect.size(); i++)
@@ -21,7 +21,7 @@ T max_func(vector<T> vect)
 }
 
 template <typename T>
-T max_func(T arr[], int size)
+T max_func(T *arr, int size)
 {
     T max = arr[0];
     for (int i = 1; i < size; i++)

@@ -17,7 +17,7 @@ string max_func(string str1, string str2)
     return str1 > str2 ? str1 : str2;
 }
 
-int max_func(vector<int> vect)
+int max_func(vector<int> &vect)
 {
     int max = vect[0];
     for (int i = 1; i < vect.size(); i++)
@@ -28,7 +28,7 @@ int max_func(vector<int> vect)
     return max;
 }
 
-double max_func(vector<double> vect)
+double max_func(vector<double> &vect)
 {
     double max = vect[0];
     for (int i = 1; i < vect.size(); i++)
@@ -39,7 +39,7 @@ double max_func(vector<double> vect)
     return max;
 }
 
-string max_func(vector<string> vect)
+string max_func(vector<string> &vect)
 {
     string max = vect[0];
     for (int i = 1; i < vect.size(); i++)
@@ -50,7 +50,7 @@ string max_func(vector<string> vect)
     return max;
 }
 
-int max_func(int arr[], int size)
+int max_func(int *arr, int size)
 {
     int max = arr[0];
     for (int i = 1; i < size; i++)
@@ -61,7 +61,7 @@ int max_func(int arr[], int size)
     return max;
 }
 
-double max_func(double arr[], int size)
+double max_func(double *arr, int size)
 {
     double max = arr[0];
     for (int i = 1; i < size; i++)
@@ -72,7 +72,7 @@ double max_func(double arr[], int size)
     return max;
 }
 
-string max_func(string arr[], int size)
+string max_func(string *arr, int size)
 {
     string max = arr[0];
     for (int i = 1; i < size; i++)
